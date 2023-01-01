@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://static.surveybuilder.cloud/css/styles.css">
+    <script src="http://static.surveybuilder.cloud/js/auth/auth.js"></script>
+    <title>Login</title>
+</head>
+<body class="font-sans bg-blue-100 flex justify-center">
+    <div class="my-32 mx-64">
+        <div class="flex flex-row lg-icon:flex-col justify-center mx-16" style="min-height: 463px;">
+            <div class="flex flex-col p-1 w-96 mt-16">
+                <div class="text-3xl items-center font-bold">
+                    <div class="mx-32">
+                        <span class="select-none">Log in</span>
+                    </div>
+                </div>
+                <form id="loginForm" method="POST" onsubmit="return Login();" class="flex flex-col my-12 items-center select-none">
+                    <div class="my-2 mx-1">
+                        <input name="email"  id="email" class="placeholder-blue-100 placeholder-opacity-80 border border-transparent w-64 h-10 rounded-xl focus:outline-none focus:ring-2 focus:border-transparent" placeholder="&nbsp;Email">
+                    </div>
+                    <div class="my-2 mx-1">
+                        <input name="password" id="password" type="password" class="placeholder-blue-100 placeholder-opacity-80 border border-transparent w-64 h-10 rounded-xl focus:outline-none focus:ring-2 focus:border-transparent" placeholder="&nbsp;Password">
+                    </div>
+                    <div class="my-2 mx-1">
+                        <button type="submit" class="w-32 rounded-3xl bg-black text-blue-100 h-10 hover:bg-blue-100 hover:text-black focus:outline-none focus:ring-2 focus:ring-opacity-50 ...">
+                            Log in
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

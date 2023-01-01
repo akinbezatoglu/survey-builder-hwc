@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://static.surveybuilder.cloud/css/styles.css">
+    <script src="http://static.surveybuilder.cloud/js/form/form.js"></script>
+    <title>Form</title>
+</head>
+<body class="bg-blue-100 flex justify-center">
+    <div class="flex-col w-full">
+        <div class="fixed bg-white flex justify-between w-full h-24">
+            <a href="/" class="text-blue-500 py-6 px-12 w-32 h-32">
+                <svg viewBox="0 0 24 24" class="w-12 h-12 fill-current">
+                    <g>
+                        <path d="M22.46 7.57L12.357 2.115c-.223-.12-.49-.12-.713 0L1.543 7.57c-.364.197-.5.652-.303 1.017.135.25.394.393.66.393.12 0 .243-.03.356-.09l.815-.44L4.7 19.963c.214 1.215 1.308 2.062 2.658 2.062h9.282c1.352 0 2.445-.848 2.663-2.087l1.626-11.49.818.442c.364.193.82.06 1.017-.304.196-.363.06-.818-.304-1.016zm-4.638 12.133c-.107.606-.703.822-1.18.822H7.36c-.48 0-1.075-.216-1.178-.798L4.48 7.69 12 3.628l7.522 4.06-1.7 12.015z"></path><path d="M8.22 12.184c0 2.084 1.695 3.78 3.78 3.78s3.78-1.696 3.78-3.78-1.695-3.78-3.78-3.78-3.78 1.696-3.78 3.78zm6.06 0c0 1.258-1.022 2.28-2.28 2.28s-2.28-1.022-2.28-2.28 1.022-2.28 2.28-2.28 2.28 1.022 2.28 2.28z"></path>
+                    </g>
+                </svg>
+            </a>
+            <div id="" class="font-semibold text-sm pt-2 select-none">
+                <div class="flex m-1">
+                    <div onclick="CreateQuestion_One()" class="ml-2 mb-2 shadow-lg w-36 h-auto bg-white rounded-md border-b-8 border-black cursor-pointer">
+                        <div class="select-none text-center text-xs pt-6 font-serif">
+                            Çoktan Seçmeli
+                        </div>
+                    </div>
+                    <div onclick="CreateQuestion_Paragraph()" class="ml-2 mb-2 shadow-lg w-36 h-16 bg-white rounded-md border-b-8 border-black cursor-pointer">
+                        <div class="select-none text-center text-xs pt-6 font-serif">
+                            Paragraf
+                        </div>
+                    </div>
+                    <div onclick="CreateQuestion_Multiple()" class="ml-2 mb-2 shadow-lg w-36 h-16 bg-white rounded-md border-b-8 border-black cursor-pointer">
+                        <div class="select-none text-center text-xs pt-6 font-serif">
+                            Çoklu Seçmeli
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between text-blue-500 py-6 px-12 w-64 h-16">
+                <a id="view_response" href="" class="w-12 h-12">
+                    <svg viewBox="0 0 24 24" class="fill-current mr-2">
+                        <g>
+                            <path d="M19.75 2H4.25C3.013 2 2 3.013 2 4.25v15.5C2 20.987 3.013 22 4.25 22h15.5c1.237 
+                            0 2.25-1.013 2.25-2.25V4.25C22 3.013 20.987 2 19.75 2zM11 16.75H7c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h4c.414 
+                            0 .75.336.75.75s-.336.75-.75.75zm6-4H7c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h10c.414 0 
+                            .75.336.75.75s-.336.75-.75.75zm0-4H7c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h10c.414 0 
+                            .75.336.75.75s-.336.75-.75.75z"></path>
+                        </g>
+                    </svg>
+                </a>
+                <a id="view_form" href="" class="w-12 h-12">
+                    <svg  viewBox="0 0 512.000000 512.000000" class="fill-current ml-2">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path d="M2370 4184 c-589 -70 -1135 -342 -1715 -855 -203 -179 -537 -540
+                            -623 -674 -36 -56 -36 -134 0 -190 46 -72 240 -297 378 -438 493 -508 1042
+                            -864 1560 -1012 225 -64 339 -79 590 -79 251 0 365 15 590 79 607 174 1274
+                            647 1806 1283 146 174 158 195 158 262 0 67 -12 88 -158 262 -529 631 -1194
+                            1105 -1796 1280 -202 59 -336 78 -555 82 -110 3 -216 2 -235 0z m435 -349
+                            c471 -71 984 -348 1477 -799 151 -137 448 -454 448 -477 0 -3 -34 -46 -77 -94
+                            -582 -666 -1244 -1089 -1848 -1180 -128 -19 -362 -19 -490 0 -435 66 -899 303
+                            -1360 694 -167 141 -565 551 -565 581 0 4 34 47 77 95 578 661 1240 1086 1839
+                            1179 122 19 375 19 499 1z"/>
+                            <path d="M2420 3564 c-433 -79 -741 -361 -846 -774 -27 -106 -27 -354 0 -460
+                            97 -380 376 -659 756 -756 106 -27 354 -27 460 0 380 97 659 376 756 756 15
+                            58 19 110 19 230 0 120 -4 172 -19 230 -95 375 -366 650 -741 752 -68 19 -323
+                            33 -385 22z m300 -350 c187 -42 358 -179 445 -359 52 -107 68 -189 63 -325 -5
+                            -129 -30 -216 -90 -318 -42 -72 -158 -188 -230 -230 -211 -124 -485 -124 -696
+                            0 -72 42 -188 158 -230 230 -124 211 -124 485 0 696 42 72 158 188 230 230
+                            151 89 328 116 508 76z"/>
+                        </g>
+                   </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="my-16 mx-32 mt-36 flex justify-center">
+            <div id="form" class="w-f">
+
+                <div id="info" data-form="" class="flex justify-between">
+                    <div class="select-none w-full mb-16 flex-col grid grid-cols-1 gap-y-1 p-2 bg-white rounded-lg border-l-8 pl-8 border-black shadow-md">
+                        <textarea id="info-name" maxlength="150" class="overflow-hidden text-xl pt-6 font-semibold uppercase resize-none placeholder-opacity-80 max-h-32 min-h-text-head border border-transparent w-auto rounded-md focus:outline-none focus:ring-2 focus:border-transparent" placeholder="&nbsp;Anket başlığı giriniz"></textarea>
+                        <div class="border-t-2"></div>
+                        <div class="mt-4">
+                            <div class="flex justify-between">
+                                <div class="grid grid-cols-1 gap-y-1 w-full">
+                                    <textarea id="info-desc" maxlength="1000" class="overflow-hidden pt-2 border-gray-200 placeholder-opacity-80 max-h-64 min-h-text-opt border-transparent w-auto rounded-md focus:outline-none focus:ring-2 focus:border-transparent" placeholder="&nbsp;Anket açıklaması giriniz"></textarea>
+                                </div>
+                            </div>
+                            <div id="" onclick="SaveFormChanges()" class="shadow-lg mt-4 w-auto h-8 bg-blue-200 rounded-md cursor-pointer">
+                                <div class="select-none text-center text-lg">
+                                    Kaydet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml-6 w-8 h-8 rounded-md cursor-pointer">
+                        <div class="select-none text-center text-lg"></div>
+                    </div>
+                </div>
+
+                <div id="questions" data-numberq=""></div>
+
+
+
+
+ 
+
+
+
+
+
+            </div>           
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://static.surveybuilder.cloud/css/styles.css">
+    <script src="http://static.surveybuilder.cloud/js/form/viewform.js"></script>
+    <title>View</title>
+</head>
+<body class="bg-blue-100 flex justify-center">
+    <div class="flex-col w-full">
+        <div class="fixed bg-white flex justify-between w-full h-24">
+            <a href="/" class="text-blue-500 py-6 px-12 w-32 h-32">
+                <svg viewBox="0 0 24 24" class="w-12 h-12 fill-current">
+                    <g>
+                        <path d="M22.46 7.57L12.357 2.115c-.223-.12-.49-.12-.713 0L1.543 7.57c-.364.197-.5.652-.303 1.017.135.25.394.393.66.393.12 0 .243-.03.356-.09l.815-.44L4.7 19.963c.214 1.215 1.308 2.062 2.658 2.062h9.282c1.352 0 2.445-.848 2.663-2.087l1.626-11.49.818.442c.364.193.82.06 1.017-.304.196-.363.06-.818-.304-1.016zm-4.638 12.133c-.107.606-.703.822-1.18.822H7.36c-.48 0-1.075-.216-1.178-.798L4.48 7.69 12 3.628l7.522 4.06-1.7 12.015z"></path><path d="M8.22 12.184c0 2.084 1.695 3.78 3.78 3.78s3.78-1.696 3.78-3.78-1.695-3.78-3.78-3.78-3.78 1.696-3.78 3.78zm6.06 0c0 1.258-1.022 2.28-2.28 2.28s-2.28-1.022-2.28-2.28 1.022-2.28 2.28-2.28 2.28 1.022 2.28 2.28z"></path>
+                    </g>
+                </svg>
+            </a>
+            <div id="response" class="my-8 mx-16"></div>
+            <div class="my-8 mx-16 text-white">
+                <button id="send" type="submit" onclick="SendForm()" class="w-32 rounded-3xl bg-black text-blue-100 h-10 hover:bg-blue-100 hover:text-black focus:outline-none focus:ring-2 focus:ring-opacity-50 ...">
+                    Gönder
+                </button>
+            </div>
+        </div>
+
+        <div class="my-16 mx-32 mt-36 flex justify-center">
+            <div id="form" class="w-f">
+
+                <div id="info" data-form="" class="flex justify-between">
+                    <div class="select-none w-full mb-16 flex-col grid grid-cols-1 gap-y-1 p-2 bg-white rounded-lg border-l-8 pl-8 border-black shadow-md">
+                        <textarea disabled id="info-name" maxlength="150" class="overflow-hidden text-xl pt-6 font-semibold uppercase resize-none placeholder-opacity-80 max-h-32 min-h-text-head border border-transparent w-auto rounded-md focus:outline-none focus:ring-2 focus:border-transparent" placeholder="&nbsp;Anket başlığı giriniz"></textarea>
+                        <div class="border-t-2"></div>
+                        <div class="mt-4">
+                            <div class="flex justify-between">
+                                <div class="grid grid-cols-1 gap-y-1 w-full">
+                                    <textarea disabled id="info-desc" maxlength="1000" class="overflow-hidden pt-2 border-gray-200 placeholder-opacity-80 max-h-64 min-h-text-opt border-transparent w-auto rounded-md focus:outline-none focus:ring-2 focus:border-transparent" placeholder="&nbsp;Anket açıklaması giriniz"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questions" data-numberq=""></div>
+
+
+
+
+ 
+
+
+
+
+
+            </div>           
+        </div>
+    </div>
+
+</body>
+</html>

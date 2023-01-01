@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="./js/main.js"></script>
+    <title>Home</title>
+</head>
+<body class="bg-blue-100 flex-col justify-center">
+    <div class="flex-col">
+        <div class="flex justify-end mt-8 mr-8">
+            <a onclick="Logout()" class="cursor-pointer w-12 flex">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="24.000000pt" height="24.000000pt" viewBox="0 0 512.000000 512.000000">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                        <path d="M988 5104 c-391 -71 -701 -373 -785 -764 -17 -80 -18 -176 -18 -1780
+                        0 -1604 1 -1700 18 -1780 85 -395 396 -696 793 -765 72 -12 206 -15 798 -15
+                        668 0 713 2 751 19 139 63 140 259 1 322 -39 18 -79 19 -752 19 -675 0 -715 1
+                        -788 20 -101 26 -182 69 -260 141 -82 75 -132 151 -170 259 l-31 85 0 1690 c0
+                        1611 1 1693 18 1749 37 118 78 187 162 271 92 92 167 136 281 165 73 19 113
+                        20 798 20 680 0 723 1 761 19 73 33 105 86 105 169 0 56 -23 98 -76 138 l-37
+                        29 -746 2 c-605 1 -761 -1 -823 -13z"/>
+                        <path d="M3645 3754 c-45 -23 -66 -45 -86 -89 -23 -49 -24 -84 -4 -133 11 -25
+                        137 -158 393 -414 l377 -378 -1465 0 -1466 0 -44 -22 c-132 -67 -132 -249 0
+                        -315 l44 -23 1466 0 1465 0 -377 -377 c-207 -208 -382 -391 -388 -406 -50
+                        -136 73 -273 212 -237 38 10 104 72 595 563 490 490 553 557 563 595 25 95 43
+                        72 -558 676 -314 314 -561 554 -579 562 -43 18 -111 18 -148 -2z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="flex justify-evenly">
+            <div class="justify-center select-none mt-16">
+                <p class="text-3xl mt-8 mb-8">Ana sayfanıza hoş geldiniz,</p>
+                <p id="User" class="text-4xl"></p>
+            </div>
+            <button id="createForm" onclick="CreateForm()" class="select-none mt-32 ml-32">
+                <div class="flex justify-evenly shadow-lg w-24 h-24 border-2 border-black bg-white">
+                    <div class="w-8 h-8 text-center text-2xl font-bold mt-8">
+                        +
+                    </div>
+                </div>
+                <p class="text-xs my-1 text-left">Yeni anket oluştur</p>
+            </button>
+        </div>
+    </div>
+    <div class="px-64 justify-center">
+        <div id="forms" data-u="" class="flex-col mt-16 grid grid-cols-4 gap-y-4 gap-x-32"></div>
+    </div>
+</body>
+</html>
