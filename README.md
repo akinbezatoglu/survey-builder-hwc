@@ -1,7 +1,7 @@
 ## A Survey Management Application on Huawei Cloud
 
 ### Project Architecture
-![2b0ad016eaf546c3b7a3812c04d218af 20230125131434 16010621640136025150067405028411](https://github.com/akinbezatoglu/survey-builder/assets/61403011/bddf2ec8-2825-48cc-844e-5bfdc5a43873)
+![2b0ad016eaf546c3b7a3812c04d218af 20230125131434 16010621640136025150067405028411](https://github.com/akinbezatoglu/survey-builder-hwc/assets/61403011/bddf2ec8-2825-48cc-844e-5bfdc5a43873)
 
 ### API Gateway Endpoints with Serverless Backend (Functions)
 
